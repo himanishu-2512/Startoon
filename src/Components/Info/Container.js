@@ -1,7 +1,7 @@
 import React from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-function Container() {
+function Container({props}) {
   return (
     <>
       <div className="w-[90%] bg-[#002647] mt-5 shadow-xl shadow-[#7d7d7d] h-[180px] rounded-xl flex flex-col items-center">
@@ -9,8 +9,8 @@ function Container() {
         <div className="flex justify-between w-[80%]">
           <div className="w-[150px] mt-5">
             <CircularProgressbar
-              value={40}
-              text={"40%"}
+              value={props.percentage}
+              text={props.percentage+"%"}
               circleRatio={0.5}
               styles={buildStyles({
                 rotation: 0.75,

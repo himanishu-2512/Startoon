@@ -5,6 +5,7 @@ export const patient_data=
         name:"S.Meena",
         age:"23",
         gender:"F",
+        percentage:40,
         medicalHistory:[
         "HyperTension",
         "DM",
@@ -16,8 +17,5 @@ export const patient_data=
         email:"meerabinsachin2@gmail.com",
         affected:"Bilateral",
     },
-    {
-        _id:1,
 
-    }
 ]

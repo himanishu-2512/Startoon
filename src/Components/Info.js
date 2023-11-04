@@ -10,7 +10,7 @@ function Info({props}) {
     <>
     <div className='flex flex-col items-center'>
     <PersonalInfo props={props}/>
-    <Container/>
+    <Container props={props}/>
     <PatientInfo props={props}/>
     <div className=' border-y-2 mt-5 border-[#bcbcbc] w-[100%] justify-center flex'><MedicalHistory props={props}/></div>
     
